@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="nav"></div>
-    <div class="section1">
+    <div class="nav">
+        <button id="btn_nocolor">click no color</button>
+        <button id="btn_color">color back</button>
+    </div>
+    <div class="section1" id="section1">
         <div class="sec1_left">
             <div class="sec1_left_innerbox">
                 <h1>This is Math</h1>
@@ -85,10 +88,25 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corporis iure consequuntur, odio ducimus itaque! Labore, facere vitae, in dolore itaque amet, cupiditate eveniet ab voluptas quos voluptatibus excepturi nisi.</p>
         </div>
         <div class="sec3_right">
-            <div class="form_box">
-
-            </div>
+            <div class="form_box"></div>
         </div>
     </div>
+    <script>
+        let id_get_color = document.getElementById('btn_nocolor');
+        // console.log(id_get);
+
+        id_get_color.addEventListener("click",function(){
+            document.getElementById('section1').classList.add('no_bgc');
+        });
+
+        let id_get_nocolor = document.getElementById('btn_color');
+        // console.log(id_get);
+
+        id_get_nocolor.addEventListener("click",function(){
+            document.getElementById('section1').classList.remove('no_bgc');
+        });
+        
+    </script>
 </body>
+
 </html>
