@@ -118,13 +118,25 @@
     height: 90vh;
     /* flex_container */
     display: flex;
-    /* align-items: center;    */
+    align-items: center;   
 }
+
 .sec3_left{
     background: rgb(233, 207, 207);/*test-color*/
     width: 50vw;
     height: 75vh;
 }
+.sec3_left h2 ,h3{
+    margin-left: 5px;
+    line-height: 0.5em;
+}
+.sec3_left p{
+    margin-left: 5px;
+    line-height: 1.2em;
+}
+
+
+
 .sec3_right{
     background: rgb(226, 176, 176);/*test-color*/
     width: 50vw;
